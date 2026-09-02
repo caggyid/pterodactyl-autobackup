@@ -1,0 +1,57 @@
+CaggyID License
+Version 1.0, September 2026
+Copyright (c) 2026 CaggyID (caggyid.my.id)
+
+1. Definitions
+
+"Software" refers to the CaggyID Pterodactyl Node Backup project, including
+its source code, build scripts, documentation, and distributed artifacts.
+"Licensee" refers to any individual or entity that obtains, installs, or
+uses the Software.
+
+2. Grant of Rights
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this Software, to use, copy, modify, and distribute the Software for
+personal, educational, and internal commercial purposes, subject to the
+conditions below.
+
+3. Conditions
+
+a) Attribution. The original copyright notice, this license text, and the
+   project name ("CaggyID Pterodactyl Node Backup") must be retained in all
+   copies or substantial portions of the Software.
+
+b) No Trademark Use. The name "CaggyID", the project logo, and associated
+   branding may not be used to endorse or promote derivative products
+   without prior written permission from CaggyID.
+
+c) Redistribution. Modified versions must be clearly marked as such and
+   must not be presented as the official CaggyID release.
+
+d) Credential Safety. Licensees must not embed or distribute any
+   credentials, OAuth tokens, or private configuration files
+   (credentials.json, token.json, .env) as part of the Software or its
+   redistribution.
+
+4. Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
+FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE. THE LICENSEE BEARS FULL RESPONSIBILITY FOR THE
+INTEGRITY AND SAFETY OF DATA PROCESSED WITH THE SOFTWARE, INCLUDING BACKUP
+CREATION, UPLOAD, RETENTION, AND RESTORE OPERATIONS.
+
+5. Limitations
+
+This license is NOT an OSI-approved open-source license and MUST NOT be
+represented as one. It is a source-available license granted by CaggyID.
+
+6. Contact
+
+For commercial licensing, contributions, or questions:
+CaggyID - https://caggyid.my.id

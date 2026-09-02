@@ -1,0 +1,19 @@
+[Unit]
+Description=CaggyID Pterodactyl Node Backup
+Documentation=https://github.com/CaggyID/caggyid-pterodactyl-backup
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+# cron scheduling is the default; this unit allows systemd-timer based runs.
+ExecStart=/usr/local/bin/caggy-backup backup --non-interactive --quiet
+# Long-running large backups need a generous timeout.
+TimeoutStartSec=6h
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7
+User=root
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,49 @@
+# CaggyID Pterodactyl Backup - example configuration
+# Copy to /etc/caggy-backup/config.yaml (system) or ~/.caggy-backup/config.yaml (user)
+# and adjust the values below. Environment variables from .env override these.
+
+app:
+  name: CaggyID Pterodactyl Backup
+  version: 1.0.0
+
+backup:
+  # Directories to back up. On Pterodactyl nodes this is usually the
+  # server volumes directory; each subdirectory is one server.
+  source:
+    - /var/lib/pterodactyl/volumes
+
+  # Files or directories (by name) to exclude from the archive.
+  exclude: []
+
+  # Working directory for temporary archives.
+  temp_directory: /tmp/caggy-backup
+
+  # Never set this to true unless you fully understand the consequences.
+  # The tool itself does NOT stop servers (non-invasive by default).
+  stop_servers: false
+
+  compression:
+    # zstd (recommended, requires the 'zstd' binary) or gzip.
+    type: zstd
+    level: 3
+
+google_drive:
+  # Backups are uploaded to /<folder_name>/<hostname>/<year>/<month>/
+  folder_name: CaggyID-Backups
+  credentials_file: /etc/caggy-backup/credentials.json
+  token_file: /etc/caggy-backup/token.json
+
+retention:
+  enabled: true
+  keep_last: 7
+  keep_daily: 7
+  keep_weekly: 4
+  keep_monthly: 6
+
+schedule:
+  enabled: false
+  cron: "0 */6 * * *"
+
+logging:
+  level: INFO
+  directory: /var/log/caggy-backup

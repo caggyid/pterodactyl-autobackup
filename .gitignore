@@ -1,0 +1,28 @@
+# Credentials & secrets
+.env
+credentials.json
+token.json
+*.crt
+*.key
+
+# Local data
+*.db
+*.log
+backups/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

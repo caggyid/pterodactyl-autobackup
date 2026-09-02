@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "caggyid-pterodactyl-backup"
+version = "1.0.0"
+description = "CaggyID Pterodactyl Node Auto Backup - Automated Pterodactyl node/server backup to Google Drive with cron scheduling, retention policy, restore, and logging."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "CaggyID", email = "contact@caggyid.my.id" }]
+keywords = ["pterodactyl", "backup", "google-drive", "node", "wings", "automation"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: System Administrators",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Archiving :: Backup",
+    "Topic :: System :: Systems Administration",
+]
+
+dependencies = [
+    "typer>=0.9.0",
+    "pyyaml>=6.0",
+    "google-api-python-client>=2.100.0",
+    "google-auth>=2.23.0",
+    "google-auth-oauthlib>=1.0.0",
+    "google-auth-httplib2>=0.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+]
+
+[project.scripts]
+caggy-backup = "caggy_backup.cli:app"
+
+[project.urls]
+Homepage = "https://caggyid.my.id"
+Documentation = "https://github.com/CaggyID/caggyid-pterodactyl-backup/tree/main/docs"
+Repository = "https://github.com/CaggyID/caggyid-pterodactyl-backup"
+Issues = "https://github.com/CaggyID/caggyid-pterodactyl-backup/issues"
+
+[tool.setuptools.packages.find]
+include = ["caggy_backup*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
