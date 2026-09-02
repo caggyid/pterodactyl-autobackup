@@ -150,7 +150,6 @@ class Config:
                     data = loaded
             except yaml.YAMLError as exc:
                 raise ConfigError(f"Failed to parse configuration file {path}: {exc}") from exc
-            cls.path = Path(path)  # type: ignore[misc]
         elif config_path is not None:
             # Explicit path requested but missing -> hard error.
             raise ConfigError(f"Configuration file not found: {config_path}")
@@ -180,9 +179,8 @@ class Config:
             retention=RetentionConfig.from_dict(data.get("retention")),
             schedule=ScheduleConfig.from_dict(data.get("schedule")),
             logging=LoggingConfig.from_dict(data.get("logging")),
+            path=Path(path) if path is not None else None,
         )
-        if cls.path is not None:
-            cfg.path = Path(path) if path is not None else None
         cfg._apply_env_overrides()
 
         if not cfg.sources:
