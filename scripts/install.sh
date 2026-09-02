@@ -8,7 +8,7 @@ APP_NAME="caggy-backup"
 APP_DIR="/opt/caggyid-pterodactyl-backup"
 CONFIG_DIR="/etc/caggy-backup"
 LOG_DIR="/var/log/caggy-backup"
-REPO_URL="${CAGGY_REPO_URL:-https://github.com/CaggyID/caggyid-pterodactyl-backup.git}"
+REPO_URL="${CAGGY_REPO_URL:-https://github.com/caggyid/pterodactyl-autobackup.git}"
 REPO_BRANCH="${CAGGY_REPO_BRANCH:-main}"
 PYTHON_MIN="3.10"
 

@@ -44,9 +44,9 @@ caggy-backup = "caggy_backup.cli:app"
 
 [project.urls]
 Homepage = "https://caggyid.my.id"
-Documentation = "https://github.com/CaggyID/caggyid-pterodactyl-backup/tree/main/docs"
-Repository = "https://github.com/CaggyID/caggyid-pterodactyl-backup"
-Issues = "https://github.com/CaggyID/caggyid-pterodactyl-backup/issues"
+Documentation = "https://github.com/caggyid/pterodactyl-autobackup/tree/main/docs"
+Repository = "https://github.com/caggyid/pterodactyl-autobackup"
+Issues = "https://github.com/caggyid/pterodactyl-autobackup/issues"
 
 [tool.setuptools.packages.find]
 include = ["caggy_backup*"]

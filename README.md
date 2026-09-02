@@ -3,7 +3,7 @@
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](pyproject.toml)
 [![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue.svg)](pyproject.toml)
 [![License](https://img.shields.io/badge/license-CaggyID%20License-green.svg)](LICENSE)
-[![Tests](https://github.com/CaggyID/caggyid-pterodactyl-backup/actions/workflows/tests.yml/badge.svg)](.github/workflows/tests.yml)
+[![Tests](https://github.com/caggyid/pterodactyl-autobackup/actions/workflows/tests.yml/badge.svg)](.github/workflows/tests.yml)
 
 Automated Pterodactyl Node/Server backup system integrated with **Google Drive API v3**, **Cron scheduling**, **retention policy management**, **SHA-256 integrity verification**, **SQLite history logging**, and **non-destructive restore support**.
 
@@ -91,14 +91,14 @@ Local Storage (/var/lib/pterodactyl/volumes)
 ### 1. One-Line Automatic Installation
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/CaggyID/caggyid-pterodactyl-backup/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/caggyid/pterodactyl-autobackup/main/scripts/install.sh | bash
 ```
 
 ### 2. Manual Installation
 
 ```bash
 # Clone repository
-git clone https://github.com/CaggyID/caggyid-pterodactyl-backup.git
+git clone https://github.com/caggyid/pterodactyl-autobackup.git
 cd caggyid-pterodactyl-backup
 
 # Install package & dependencies
