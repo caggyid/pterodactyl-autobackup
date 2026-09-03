@@ -7,7 +7,7 @@
 
 Automated Pterodactyl Node/Server backup system integrated with **Google Drive API v3**, **Cron scheduling**, **retention policy management**, **SHA-256 integrity verification**, **SQLite history logging**, and **non-destructive restore support**.
 
-Developed by **CaggyID** ([caggyid.my.id](https://caggyid.my.id)).
+Developed by **CaggyID**
 
 ---
 
